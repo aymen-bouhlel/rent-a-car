@@ -1,0 +1,4 @@
+<?php return array (
+  0 => 9223372036854775807,
+  1 => 'a:2:{i:0;O:27:"Doctrine\\ORM\\Mapping\\Entity":2:{s:15:"repositoryClass";s:30:"App\\Repository\\ImageRepository";s:8:"readOnly";b:0;}i:1;O:42:"Doctrine\\ORM\\Mapping\\HasLifecycleCallbacks":0:{}}',
+);

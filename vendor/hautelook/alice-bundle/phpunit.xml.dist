@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="fixtures/Functional/bootstrap.php"
+         colors="true"
+         forceCoversAnnotation="true"
+         verbose="true">
+
+    <php>
+        <server name="KERNEL_DIR" value="tests/Functional" />
+
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak_vendors" />
+    </php>
+
+    <testsuites>
+        <testsuite name="AliceBundle Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>./</directory>
+            <exclude>
+                <directory>fixtures</directory>
+                <directory>vendor</directory>
+                <directory>tests</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+</phpunit>
